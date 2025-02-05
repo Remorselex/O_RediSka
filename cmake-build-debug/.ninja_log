@@ -1,0 +1,7 @@
+# ninja log v6
+158	187	1738702508691313202	DtStrct	d1856e853e395ebd
+0	121	1738701655686801837	CMakeFiles/DtStrct.dir/src/LinkedList/LinkedList.cpp.o	c771d800483711e0
+1	7	1738700034877382945	CMakeFiles/DtStrct.dir/src/BinaryThree/BinaryThree.cpp.o	582f097c6c2e23a9
+1	158	1738702508534310331	CMakeFiles/DtStrct.dir/main.cpp.o	95d6a890ae0f3674
+0	17	1738703454087982369	build.ninja	2cdecf189f51bf69
+0	7	1738702485827894555	CMakeFiles/DtStrct.dir/src/Containers/BinaryThree/BinaryThree.cpp.o	a4f497b006af05fb

@@ -55,12 +55,6 @@ build CMakeFiles/DtStrct.dir/main.cpp.o: CXX_COMPILER__DtStrct_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/DtStrct.dir
   OBJECT_FILE_DIR = CMakeFiles/DtStrct.dir
 
-build CMakeFiles/DtStrct.dir/BinaryThree/BinaryThree.cpp.o: CXX_COMPILER__DtStrct_unscanned_Debug /home/user/CLionProjects/DtStrct/BinaryThree/BinaryThree.cpp || cmake_object_order_depends_target_DtStrct
-  DEP_FILE = CMakeFiles/DtStrct.dir/BinaryThree/BinaryThree.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/DtStrct.dir
-  OBJECT_FILE_DIR = CMakeFiles/DtStrct.dir/BinaryThree
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target DtStrct
@@ -69,7 +63,7 @@ build CMakeFiles/DtStrct.dir/BinaryThree/BinaryThree.cpp.o: CXX_COMPILER__DtStrc
 #############################################
 # Link the executable DtStrct
 
-build DtStrct: CXX_EXECUTABLE_LINKER__DtStrct_Debug CMakeFiles/DtStrct.dir/main.cpp.o CMakeFiles/DtStrct.dir/BinaryThree/BinaryThree.cpp.o
+build DtStrct: CXX_EXECUTABLE_LINKER__DtStrct_Debug CMakeFiles/DtStrct.dir/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/DtStrct.dir
   POST_BUILD = :

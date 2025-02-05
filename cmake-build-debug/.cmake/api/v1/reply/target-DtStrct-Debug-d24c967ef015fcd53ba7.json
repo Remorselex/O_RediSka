@@ -49,8 +49,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				2
+				0
 			]
 		}
 	],
@@ -83,15 +82,16 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				2
+				0
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -105,14 +105,18 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "BinaryThree/BinaryThree.h",
+			"path" : "src/Containers/LinkedList/LinkedListNode.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "BinaryThree/BinaryThree.cpp",
-			"sourceGroupIndex" : 0
+			"path" : "src/Containers/LinkedList/LinkedList.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/Containers/BinaryThree/BinaryThree.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

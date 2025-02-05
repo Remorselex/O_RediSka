@@ -4,5 +4,7 @@ project(DtStrct)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(DtStrct main.cpp
-        BinaryThree/BinaryThree.h
-        BinaryThree/BinaryThree.cpp)
+        src/Containers/LinkedList/LinkedListNode.h
+        src/Containers/LinkedList/LinkedList.h
+        src/Containers/BinaryThree/BinaryThree.h
+)
