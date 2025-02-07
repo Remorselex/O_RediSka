@@ -1,0 +1,10 @@
+.ide
+cmake-build-debug
+build/
+Release/
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+*.a

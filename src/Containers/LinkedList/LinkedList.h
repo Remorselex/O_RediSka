@@ -26,7 +26,7 @@ public:
 
     [[maybe_unused]] [[maybe_unused]] T at(int index);
 
-    [[maybe_unused]] [[maybe_unused]]void remove(int index);
+    [[maybe_unused]] [[maybe_unused]] void remove(int index);
 
     [[maybe_unused]] [[maybe_unused]] int size();
 };
