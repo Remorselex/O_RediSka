@@ -1,3 +1,8 @@
+/*TODO Write tests for containers
+ * also this is very simple realization of header-only container file
+ * mb in future it will be used in my other solutions so it will be tested and improved
+ * [[maybe_unused]] is a temp crutch for kill warnings */
+
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
@@ -6,8 +11,7 @@
 #include <stdexcept>
 
 template<class T>
-class LinkedList {
-
+class [[maybe_unused]] LinkedList {
 private:
     LinkedListNode<T>* lastNode = nullptr;
     LinkedListNode<T>* firstNode = nullptr;
@@ -15,11 +19,16 @@ private:
 
 public:
     LinkedList();
-    void push_back(T value);
-    void print();
-    T at(int index);
-    void remove(int index);
-    int size();
+
+    [[maybe_unused]] void push_back(T value);
+
+    [[maybe_unused]] [[maybe_unused]] void print();
+
+    [[maybe_unused]] [[maybe_unused]] T at(int index);
+
+    [[maybe_unused]] [[maybe_unused]]void remove(int index);
+
+    [[maybe_unused]] [[maybe_unused]] int size();
 };
 
 template<class T>
@@ -36,7 +45,7 @@ template<class T>
 LinkedList<T>::LinkedList() :   lastNode(nullptr), firstNode(nullptr), nodesCount(0){}
 
 template<class T>
-void LinkedList<T>::push_back(T value) {
+[[maybe_unused]] void LinkedList<T>::push_back(T value) {
     auto* newNode = new LinkedListNode<T>(value);
 
     if(firstNode == nullptr) {
@@ -51,7 +60,7 @@ void LinkedList<T>::push_back(T value) {
 }
 
 template<class T>
-T LinkedList<T>::at(int index = NULL) {
+[[maybe_unused]] T LinkedList<T>::at(int index) {
     if(index < 0) {
         throw std::out_of_range("index < 0");
     }
@@ -77,7 +86,7 @@ T LinkedList<T>::at(int index = NULL) {
 }
 
 template<class T>
-void LinkedList<T>::remove(int index) {
+[[maybe_unused]] void LinkedList<T>::remove(int index) {
 
     if(index < 0) {
         throw std::out_of_range("index < 0");
@@ -108,12 +117,12 @@ void LinkedList<T>::remove(int index) {
 }
 
 template <class T>
-int LinkedList<T>::size() {
+[[maybe_unused]] int LinkedList<T>::size() {
     return this->nodesCount - 1;
 }
 
 template <class T>
-void LinkedList<T>::print() {
+[[maybe_unused]] void LinkedList<T>::print() {
         LinkedListNode<T>* current = firstNode;
         while (current != nullptr) {
             std::cout
@@ -125,5 +134,4 @@ void LinkedList<T>::print() {
         }
         std::cout << std::endl;
 }
-
 #endif
