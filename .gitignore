@@ -1,5 +1,6 @@
 .ide
 cmake-build-debug
+notes
 build/
 Release/
 *.o
