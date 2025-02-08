@@ -1,18 +1,18 @@
 //
 // Created by Remorselex on 08.02.2025.
 //
-#ifndef DTSTRCT_THREE_UTILS_H
-#define DTSTRCT_THREE_UTILS_H
+#ifndef DTSTRCT_TREE_UTILS_H
+#define DTSTRCT_TREE_UTILS_H
 
 #include "iostream"
-#include "../ThreeNode.h"
+#include "../TREENode.h"
 
-namespace ThreeUtils {
+namespace TreeUtils {
     template <typename T>
     void nodePrinter(const std::string& NodeSignature, Node<T>* NodeToPrint);
 }
 
-namespace ThreeUtils {
+namespace TreeUtils {
     template <typename T>
     inline void nodePrinter(const std::string& NodeSignature, Node<T>* NodeToPrint) {
         std::cout << NodeSignature << ": " << NodeToPrint->Value << std::endl
