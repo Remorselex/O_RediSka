@@ -22,13 +22,13 @@ public:
 
     [[maybe_unused]] void push_back(T value);
 
-    [[maybe_unused]] [[maybe_unused]] void print();
+    [[maybe_unused]] void print();
 
-    [[maybe_unused]] [[maybe_unused]] T at(int index);
+    [[maybe_unused]] T at(int index);
 
-    [[maybe_unused]] [[maybe_unused]] void remove(int index);
+    [[maybe_unused]] void remove(int index);
 
-    [[maybe_unused]] [[maybe_unused]] int size();
+    [[maybe_unused]] int size();
 };
 
 template<class T>
