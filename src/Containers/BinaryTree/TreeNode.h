@@ -19,8 +19,16 @@ Node<T>::Node(T& value): Value(value), LeftNode(nullptr), RightNode(nullptr) {}
 
 template <typename T>
 Node<T>::~Node() {
-    delete LeftNode;
-    delete RightNode;
+    if(LeftNode) {
+        delete LeftNode;
+        LeftNode = nullptr;
+    }
+
+    if(RightNode) {
+        delete RightNode;
+        RightNode = nullptr;
+    }
+
 }
 
 #endif

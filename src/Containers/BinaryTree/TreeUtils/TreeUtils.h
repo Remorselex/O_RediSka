@@ -5,7 +5,7 @@
 #define DTSTRCT_TREE_UTILS_H
 
 #include "iostream"
-#include "../TREENode.h"
+#include "../TreeNode.h"
 
 namespace TreeUtils {
     template <typename T>

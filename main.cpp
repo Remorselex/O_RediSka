@@ -7,7 +7,20 @@ void List_Test() {
     list.push_back(1);
 }
 
-int main() {
+//balanced
+void Test_Tree_Deletion_1() {
+    BinaryTree<int> three;
+    three.add(10);
+    three.add(5);
+    three.add(3);
+    three.add(7);
+    three.add(15);
+    three.add(12);
+    three.add(20);
+}
+
+//not balanced
+void Test_Tree_Deletion_2() {
     BinaryTree<int> three;
     three.add(11);
     three.add(10);
@@ -15,6 +28,12 @@ int main() {
     three.add(8);
     three.add(9);
     three.add(12);
+}
 
+int main() {
+    Test_Tree_Deletion_2();
+
+
+    List_Test();
     return 0;
 }
