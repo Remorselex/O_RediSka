@@ -9,8 +9,9 @@
     private:
         Node<T>* RootNode;
 
+        //mb its cringe to split func like this. IDK (Я художник я так вижу)
         void addRecursive(Node<T>*& current, T& value);
-        void findRecursive(T& value);
+        Node<T>* findRecursive(Node<T>* current, T& value);
         void deleteTreeRecursive(Node<T>*& node);
 
     public:
@@ -18,7 +19,7 @@
         ~BinaryTree();
 
         void add(T value);
-        void find(T value);
+        Node<T>* find(T value);
     };
 
 template<typename T>
@@ -68,5 +69,31 @@ void BinaryTree<T>::deleteTreeRecursive(Node<T>*& node) {
     void BinaryTree<T>::add(T value) {
         addRecursive(RootNode, value);
     }
+
+    template<typename T>
+    Node<T>* BinaryTree<T>::findRecursive(Node<T>* current, T &value) {
+        if(current->Value == value) {
+            return current;
+        } else {
+            return nullptr;
+        }
+
+        if(current->LeftNode) {
+            findRecursive(current->LeftNode);
+        }
+
+        if(current->RightNode) {
+            findRecursive(current->RightNode);
+        }
+
+
+    }
+
+
+    template<typename T>
+    Node<T>* BinaryTree<T>::find(T value) {
+        return  findRecursive(RootNode,value);
+    }
+
 
     #endif
