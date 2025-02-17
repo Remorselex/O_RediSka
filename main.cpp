@@ -2,10 +2,10 @@
 #include "src/Containers/LinkedList/LinkedList.h"
 #include "src/Containers/BinaryTree/BinaryTree.h"
 
-void List_Test() {
-    LinkedList<int> list;
-    list.push_back(1);
-}
+// void List_Test() {
+//     LinkedList<int> list;
+//     list.push_back(1);
+// }
 
 //balanced
 void Test_Tree_Deletion_1() {

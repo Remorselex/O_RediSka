@@ -1,7 +1,4 @@
-/*TODO Write tests for containers
- * also this is very simple realization of header-only container file
- * mb in future it will be used in my other solutions so it will be tested and improved
- * [[maybe_unused]] is a temp crutch for kill warnings */
+/*TODO Write tests */
 
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
@@ -11,7 +8,7 @@
 #include <stdexcept>
 
 template<class T>
-class [[maybe_unused]] LinkedList {
+class LinkedList {
 private:
     LinkedListNode<T>* lastNode = nullptr;
     LinkedListNode<T>* firstNode = nullptr;
@@ -20,15 +17,15 @@ private:
 public:
     LinkedList();
 
-    [[maybe_unused]] void push_back(T value);
+    void push_back(T value);
 
-    [[maybe_unused]] void print();
+    void print();
 
-    [[maybe_unused]] T at(int index);
+    T at(int index);
 
-    [[maybe_unused]] void remove(int index);
+    void remove(int index);
 
-    [[maybe_unused]] int size();
+    int size();
 };
 
 template<class T>
@@ -45,7 +42,7 @@ template<class T>
 LinkedList<T>::LinkedList() :   lastNode(nullptr), firstNode(nullptr), nodesCount(0){}
 
 template<class T>
-[[maybe_unused]] void LinkedList<T>::push_back(T value) {
+void LinkedList<T>::push_back(T value) {
     auto* newNode = new LinkedListNode<T>(value);
 
     if(firstNode == nullptr) {
@@ -60,7 +57,7 @@ template<class T>
 }
 
 template<class T>
-[[maybe_unused]] T LinkedList<T>::at(int index) {
+T LinkedList<T>::at(int index) {
     if(index < 0) {
         throw std::out_of_range("index < 0");
     }
@@ -86,7 +83,7 @@ template<class T>
 }
 
 template<class T>
-[[maybe_unused]] void LinkedList<T>::remove(int index) {
+void LinkedList<T>::remove(int index) {
 
     if(index < 0) {
         throw std::out_of_range("index < 0");
@@ -117,12 +114,12 @@ template<class T>
 }
 
 template <class T>
-[[maybe_unused]] int LinkedList<T>::size() {
+int LinkedList<T>::size() {
     return this->nodesCount - 1;
 }
 
 template <class T>
-[[maybe_unused]] void LinkedList<T>::print() {
+void LinkedList<T>::print() {
         LinkedListNode<T>* current = firstNode;
         while (current != nullptr) {
             std::cout
