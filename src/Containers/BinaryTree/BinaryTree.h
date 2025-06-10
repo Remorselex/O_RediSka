@@ -72,12 +72,10 @@ void BinaryTree<T>::deleteTreeRecursive(Node<T>*& node) {
 
     template<typename T>
     Node<T>* BinaryTree<T>::findRecursive(Node<T>* current, T &value) {
-        if(current->Value == value) {
-            return current;
-        } else {
-            return nullptr;
-        }
+    //понять бы что возвращать при find. И для чего он тут нужен.
 
+
+    //сделать вариатвность обхода ?
         if(current->LeftNode) {
             findRecursive(current->LeftNode);
         }
